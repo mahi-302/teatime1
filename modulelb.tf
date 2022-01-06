@@ -17,6 +17,6 @@ resource "aws_lb_listener" "front_end" {
   protocol          = var.protocol
   default_action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.test.arn
+    target_group_arns = aws_lb_target_group.test.arn
   }
 }
