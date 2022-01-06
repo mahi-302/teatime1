@@ -28,11 +28,11 @@ variable "load_balancer_type" {
 }
 variable "security_groups" {
   type = list(string)
-  default = ["sg-0244e3f85210cc582"]
+  default = ["sg-03723ff32a5606bda"]
 }
 variable "subnets" {
   type = list(string)
-  default =  ["subnet-bff76bd4","subnet-15e22868"]
+  default =  ["subnet-0c9f6c09d2f62dc2d","subnet-02ac0c9e52da309ab"]
 }
 variable "name_TG" {
   type = string
@@ -44,9 +44,9 @@ variable "protocol" {
 }
 variable "vpc_id" {
   type = string
-  default = "vpc-6014600b"
+  default = "vpc-0a7387e5c61ec7456"
 }
 variable "target_id" {
   type = string
-  default = "i-0080b8172b18ad08a"
+  default = "i-0ae95d4c23948efa5"
 }
