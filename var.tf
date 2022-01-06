@@ -28,11 +28,11 @@ variable "load_balancer_type" {
 }
 variable "security_groups" {
   type = list(string)
-  default = ["sg-0244e3f85210cc582"]
+  default = ["sg-03723ff32a5606bda"]
 }
 variable "subnets" {
   type = list(string)
-  default =  ["subnet-bff76bd4","subnet-15e22868"]
+  default =  ["subnet-0c9f6c09d2f62dc2d","subnet-02ac0c9e52da309ab"]
 }
 variable "name_TG" {
   type = string
