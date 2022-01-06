@@ -6,5 +6,5 @@ module "a" {
 }
   module "b" {
     source = "git::https://github.com/Gunamoni11/demo.git?ref=master"
-    target_group_arn = module.a.TG_ARN
+    target_group_arns = module.a.TG_ARN
  }
