@@ -7,6 +7,7 @@ resource "aws_launch_configuration" "as_config" {
 }
 resource "aws_autoscaling_group" "bar" {
   name                 = var.name 
+  depends_on           = ["aws_launch_configuration.as_config"]
   launch_configuration = aws_launch_configuration.as_config.name
   min_size             = 1
   max_size             = 2
