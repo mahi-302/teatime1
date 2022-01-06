@@ -44,11 +44,11 @@ variable "protocol" {
 }
 variable "vpc_id" {
   type = string
-  default = "vpc-6014600b"
+  default = "vpc-0a7387e5c61ec7456"
 }
 variable "target_id" {
   type = string
-  default = "i-0080b8172b18ad08a"
+  default = "i-0ae95d4c23948efa5"
 }
 variable "target_group_arns" {
 }
