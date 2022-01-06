@@ -1,10 +1,10 @@
 provider "aws"{
   region = "us-east-2"
 }
-module "slave" {
+module "a" {
   source = "git::https://github.com/Gunamoni11/demo.git?ref=slave"
 }
-  module "master" {
+  module "b" {
     source = "git::https://github.com/Gunamoni11/demo.git?ref=master"
-    target_group_arn = module.slave.TG_ARN
+    target_group_arn = module.a.TG_ARN
  }
