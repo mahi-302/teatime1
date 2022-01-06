@@ -12,5 +12,6 @@ resource "aws_autoscaling_group" "bar" {
   min_size             = 1
   max_size             = 2
   desired_capacity     = 1
+  target_group_arn = [var.target_group_arn]
  availability_zones = var.availability_zones
 }
