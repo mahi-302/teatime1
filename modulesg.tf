@@ -8,7 +8,7 @@ resource "aws_launch_configuration" "as_config" {
 resource "aws_autoscaling_group" "bar" {
   name                 = var.name 
   depends_on           = ["aws_launch_configuration.as_config","aws_lb_target_group.test"]
-  launch_configuration = aws_launch_configuration.as_conf.name
+  launch_configuration = aws_launch_configuration.as_config.name
   min_size             = 1
   max_size             = 2
   desired_capacity     = 1
