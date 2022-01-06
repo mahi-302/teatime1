@@ -2,7 +2,7 @@ resource "aws_launch_configuration" "as_config" {
   name_prefix   = var.name_prefix
   image_id      = var.image_id
   instance_type = var.instance_type
-  security_groups    = ["sg-0244e3f85210cc582"]
+  security_groups    = ["sg-03723ff32a5606bda"]
   user_data = "${file("userdata.sh")}"
 }
 resource "aws_autoscaling_group" "bar" {
